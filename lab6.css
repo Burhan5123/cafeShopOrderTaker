@@ -1,0 +1,36 @@
+body{
+
+	background-image: url(photos/img1.jpg);
+	/*https://unsplash.com/photos/EWDvHNNfUmQ*/
+	font-size: 2vw;
+
+
+}
+
+div{
+
+	text-align: center;
+
+
+}
+
+input{
+
+	width: 12vw;
+	height: 1.5vw;
+
+
+}
+
+h1,h2{
+
+	color: darkblue;
+	font-style: italic;
+
+}
+
+h3{
+
+	color: red;
+
+}

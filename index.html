@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel = "stylesheet" type = "text/css" href="lab6.css">
+	<script src="lab6.js"></script>
+	<title>Cafe Europa</title>
+</head>
+<body>
+	<div>
+	<form onsubmit="totalprice(); return false;">
+		<h2>Today is: <br><span id="datetoday"></span></h2>
+		<h1>Café Europa</h1>
+
+		<label>First Name</label><br>
+		<input id="firstname" type="text" maxlength="30" pattern="[A-Za-z -]+$" placeholder="Enter your first name here" required><br>
+
+		<label>last Name</label><br>
+		<input id="lastname" type="text" maxlength="30" pattern="[A-Za-z -]+$" placeholder="Enter your last name here" required><br>
+
+		<label>Phone Number</label><br>
+		<input id="number" type="tel"  pattern="[0-9]{3}[-][0-9]{3}[-][0-9]{4}" placeholder="e.g 123-123-1234" required><br>
+
+		<label>Order Pick up time</label><br>
+		<input id="pickupdate" type="datetime-local" required ><br>
+
+		<h3>Choose from the following food items:</h3>
+		<h3>Neapolitan Style Pizza:</h3>
+
+		<label>Margherita: $12.00 </label><br>
+		<input id="margherita" type="Number" min="0" placeholder="0"><br>
+
+		<label>Quattro Formaggi: $12.50</label><br>
+		<input id="maggi" type="Number" min="0" placeholder="0"><br>
+
+		<label>Capricciosa: $13.00</label><br>
+		<input id="capricciosa" type="Number" min="0" placeholder="0"><br>
+
+		<h3>Sandwich Choices:</h3>
+
+		<label>Schnitzel: $8.50</label><br>
+		<input id="schnitzel" type="Number" min="0" placeholder="0"><br>
+
+		<label>Mixed Grill: $9.50</label><br>
+		<input id="mixedgrill" type="Number" min="0" placeholder="0"><br>
+
+		<label>Big Beef on a Bun: $10.00</label><br>
+		<input id="bigbeef" type="Number" min="0" placeholder="0"><br>
+
+		<h3>Beverges: </h3>
+
+		<label>Coffee: $2.00 </label><br>
+		<input id="coffee" type="Number" min="0" placeholder="0"><br>
+
+		<label>Latte: $2.50</label><br>
+		<input id="latte" type="Number" min="0" placeholder="0"><br>
+
+		<label>Soft drink: $1.75</label><br>
+		<input id="drink" type="Number" min="0" placeholder="0"><br>
+
+		<input type="reset" value="Reset"> <input type="submit" value="Submit" >
+
+	</form>
+
+		<h2>Your Order Details: <br><span id="result"></span></h2>
+
+	</div>
+
+
+
+
+	
+</body>
+</html>
